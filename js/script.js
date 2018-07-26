@@ -17,7 +17,7 @@ function showCountriesList(resp) {
   countriesList.innerHTML = '';
 	resp.forEach(function(item) {
     var liEl = document.createElement('li');
-    liEl.innerText = ' Country name is ' + item.name + '. Capital of ' + item.name + ' is ' + item.capital + '.';
+    liEl.innerText = ' Country name is ' + item.name + '. Capital of ' + item.name + ' is ' + item.capital + '. The population of ' + item.name + ' is ' + item.population + ' people. ';
     countriesList.appendChild(liEl);
 });
 }
